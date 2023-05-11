@@ -18,7 +18,7 @@ const NavBar = () => {
 
   return (
     <nav className="nav-bar">
-      <h1>Sluper Chap Reactness</h1>
+      <h1>BANTz</h1>
       {user ? (
         <button onClick={googleSignOut} className="sign-out" type="button">
           SignOut

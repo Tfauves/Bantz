@@ -12,6 +12,7 @@ import Message from "./Message";
 import SendMessage from "./SendMessage";
 
 const ChatBox = () => {
+  const scroll = useRef();
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
@@ -38,7 +39,8 @@ const ChatBox = () => {
           <Message key={message.id} message={message} />
         ))}
       </div>
-      <SendMessage />
+      <span ref={scroll}></span>
+      <SendMessage scroll={scroll} />
     </main>
   );
 };
